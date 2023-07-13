@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form.</p>
+    <form action="#" method="post" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name <br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          /><br />
+        </label>
+        <label for="email" id="email-label"
+          >Email <br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <br />
+        </label>
+        <label for="age" id="number-label"
+          >Age <br />
+          <input
+            type="number"
+            id="age"
+            placeholder="Enter Your Age"
+            min="15"
+            max="100"
+            required
+          />
+          <br />
+        </label>
+        <label for="dropdown"
+          >Which Role do you prefer? <br />
+          <select name="dropdown" id="dropdown">
+            <option value="select">Select one</option>
+            <option value="frontend">Front-end Developer</option>
+            <option value="backend">Back-end Developer</option>
+            <option value="fullstack">Full-stack Developer</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p class="para">Most Favourite Language</p>
+        <label for="html">
+          <input type="radio" name="html" id="html" value="Html" />HTML <br />
+        </label>
+        <label for="css">
+          <input type="radio" name="css" id="css" value="Css" />CSS <br />
+        </label>
+        <label for="javascript">
+          <input
+            type="radio"
+            name="javascript"
+            id="javascript"
+            value="Javascript"
+          />JAVASCRIPT
+        </label>
+        <br />
+        <p class="para">Most Toughest Language</p>
+        <label for="html">
+          <input type="radio" name="html" id="html" value="Html" />HTML <br />
+        </label>
+        <label for="css">
+          <input type="radio" name="css" id="css" value="Css" />CSS <br />
+        </label>
+        <label for="javascript">
+          <input
+            type="radio"
+            name="javascript"
+            id="javascript"
+            value="Javascript"
+          />JAVASCRIPT
+        </label>
+        <br />
+        <p class="para">Skills Specialist</p>
+
+        <label for="html">
+          <input type="checkbox" name="html" id="html" value="Html" />HTML
+          <br />
+        </label>
+        <label for="css">
+          <input type="checkbox" name="css" id="css" value="Css" />CSS <br />
+        </label>
+        <label for="js">
+          <input
+            type="checkbox"
+            name="javascript"
+            id="js"
+            value="Javascript"
+          />JAVASCRIPT <br />
+        </label>
+        <label for="git">
+          <input type="checkbox" name="git" id="git" value="Git" />GIT <br />
+        </label>
+        <label for="design">
+          <input type="checkbox" name="design" id="design" value="Ui/Ux" />UI/UX
+          design
+          <br />
+        </label>
+        <label for="php">
+          <input type="checkbox" name="php" id="php" value="Php" />PHP <br />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="feedback">
+          Your Feedback Matters <br />
+          <textarea name="feedback" id="feedback" cols="30" rows="3"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
